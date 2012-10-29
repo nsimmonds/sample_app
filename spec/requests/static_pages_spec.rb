@@ -2,9 +2,10 @@ require 'spec_helper'
 require 'minitest/reporters'
 MiniTest::Reporters.use!
 
-tit = "Ruby on Rails Tutorial Sample App | "
+
 
 describe "Static pages" do
+  let(:tit) { "Ruby on Rails Tutorial Sample App | " }
 
   describe "Home page" do
 
@@ -51,12 +52,12 @@ describe "Static pages" do
   describe "Contact page" do
 
     it "should have the h1 Contact" do
-      visit 'static_pages/contact'
+      visit '/static_pages/contact'
       page.should have_selector('h1', :text => 'Contact')
     end
 
     it "should have the title Contact" do
-      visit '/static_pages/cotact'
+      visit '/static_pages/contact'
        page.should have_selector('title',
             :text => tit+"Contact")
     end
