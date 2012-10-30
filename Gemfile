@@ -10,6 +10,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork', '0.9.2'
+  gem 'wdm'
 end
 
 # Gems used only for assets and not required
