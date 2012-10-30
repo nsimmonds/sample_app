@@ -2,12 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'pg', '0.12.2'
+gem 'wdm'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
   gem "guard"
   gem 'guard-rspec'
-  gem 'guard-spork', '1.2.0'
+  gem 'guard-spork'
   gem 'spork', '0.9.2'
 end
 
