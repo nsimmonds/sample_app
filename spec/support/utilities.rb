@@ -1,10 +1,8 @@
-require "rspec"
-
-describe Helper methods do
-
-  it "should " do
-
-    #To change this template use File | Settings | File Templates.
-    true.should == false
+def full_title(page_title)
+  base_title = "Ruby on Rails Tutorial Sample App"
+  if page_title.empty?
+    base_title
+  else
+    "#{base_title} | #{page_title}"
   end
 end
